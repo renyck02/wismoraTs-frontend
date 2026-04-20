@@ -135,7 +135,7 @@ const Register = () => {
               </div>
               <div className="flex items-center">
                 <input id="terms" name="terms" type="checkbox" required className="h-4 w-4 text-primary focus:ring-primary border-muted-foreground rounded" />
-                <label htmlFor="terms" className="ml-2 block text-sm text-foreground">Acepto los <button type="button" onClick={() => toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" })} className="text-primary hover:text-primary/80">términos y condiciones</button></label>
+                <label htmlFor="terms" className="ml-2 block text-sm text-foreground">Acepto los <button type="button"  className="text-primary hover:text-primary/80">términos y condiciones</button></label>
               </div>
               <Button type="submit" disabled={isLoading} className="w-full text-lg py-3 disabled:opacity-50 disabled:cursor-not-allowed">
                 {isLoading ? ( <div className="flex items-center justify-center"><div className="animate-spin rounded-full h-5 w-5 border-b-2 border-primary-foreground mr-2"></div>Creando cuenta...</div> ) : 'Crear Cuenta'}
@@ -146,7 +146,7 @@ const Register = () => {
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.4 }} className="text-center">
-            <p className="text-muted-foreground text-sm">Al registrarte, aceptas nuestros <button onClick={() => toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" })} className="text-primary hover:text-primary/80">Términos de Servicio</button> y <button onClick={() => toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" })} className="text-primary hover:text-primary/80">Política de Privacidad</button></p>
+            <p className="text-muted-foreground text-sm">Al registrarte, aceptas nuestros <button className="text-primary hover:text-primary/80">Términos de Servicio</button> y <button className="text-primary hover:text-primary/80">Política de Privacidad</button></p>
           </motion.div>
         </div>
       </div>

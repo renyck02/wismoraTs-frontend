@@ -41,7 +41,7 @@ const CourseDetail = () => {
   };
 
   const handleActionClick = (action) => {
-    toast({ title: `🚧 ${action} no está implementado aún`, description: "¡Puedes solicitar esta funcionalidad en tu próximo prompt! 🚀" });
+
   };
   
   const handlePlayVideo = (lessonId) => {
@@ -50,7 +50,7 @@ const CourseDetail = () => {
 
   const handleStartExam = (examId) => {
     if(!examId || (course.content.exams.find(e => e.id === examId)?.questions.length === 0)){
-       toast({ title: `🚧 Examen no disponible`, description: "Este examen aún no tiene preguntas. ¡Puedes solicitar esta funcionalidad en tu próximo prompt! 🚀" });
+
        return;
     }
     navigate(`/curso/${id}/examen/${examId}`);

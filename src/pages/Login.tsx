@@ -81,7 +81,7 @@ const Login = () => {
                   <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 text-primary focus:ring-primary border-muted-foreground rounded" />
                   <label htmlFor="remember-me" className="ml-2 block text-sm text-foreground">Recordarme</label>
                 </div>
-                <button type="button" onClick={() => toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" })} className="text-sm text-primary hover:text-primary/80">¿Olvidaste tu contraseña?</button>
+                <button type="button"  className="text-sm text-primary hover:text-primary/80">¿Olvidaste tu contraseña?</button>
               </div>
 
               <Button type="submit" disabled={isLoading} className="w-full text-lg py-3 disabled:opacity-50 disabled:cursor-not-allowed">
@@ -111,8 +111,8 @@ const Login = () => {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.4 }} className="text-center">
             <p className="text-muted-foreground text-sm">
               Al iniciar sesión, aceptas nuestros{' '}
-              <button onClick={() => toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" })} className="text-primary hover:text-primary/80">Términos de Servicio</button>{' '}y{' '}
-              <button onClick={() => toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" })} className="text-primary hover:text-primary/80">Política de Privacidad</button>
+              <button onClick={() => className="text-primary hover:text-primary/80">Términos de Servicio</button>{' '}y{' '}
+              <button onClick={() =>  className="text-primary hover:text-primary/80">Política de Privacidad</button>
             </p>
           </motion.div>
         </div>

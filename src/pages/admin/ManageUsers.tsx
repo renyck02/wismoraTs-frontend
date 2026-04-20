@@ -11,10 +11,7 @@ const ManageUsers = () => {
     const { toast } = useToast();
 
     const handleAction = () => {
-        toast({
-            title: "🚧 ¡En construcción!",
-            description: "Esta funcionalidad estará disponible pronto.",
-        });
+
     };
     
     const users = usersData;

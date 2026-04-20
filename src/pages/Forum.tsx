@@ -62,7 +62,7 @@ const Forum = () => {
   };
 
   const handleCommentOrShare = () => {
-    toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" });
+
   };
 
   const filteredPosts = posts.filter(post => {

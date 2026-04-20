@@ -57,7 +57,7 @@ const Profile = () => {
   };
 
   const handleContinueCourse = (courseId) => {
-    toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" });
+
   };
 
   const formatDate = (dateString) => {
@@ -115,7 +115,7 @@ const Profile = () => {
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-border">
-                  <Button onClick={() => toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" })} variant="ghost" className="w-full justify-start text-muted-foreground hover:text-foreground"><Settings className="w-5 h-5 mr-3" />Configuración</Button>
+                  <Button  variant="ghost" className="w-full justify-start text-muted-foreground hover:text-foreground"><Settings className="w-5 h-5 mr-3" />Configuración</Button>
                 </div>
               </motion.div>
             </div>

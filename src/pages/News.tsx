@@ -142,7 +142,7 @@ const News = () => {
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">Suscríbete a nuestro newsletter y recibe las últimas noticias tech directamente en tu inbox</p>
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input type="email" placeholder="tu@email.com" className="flex-1 px-4 py-3 bg-background border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary" />
-                <Button onClick={() => toast({ title: "🚧 Esta funcionalidad no está implementada aún—¡pero no te preocupes! ¡Puedes solicitarla en tu próximo prompt! 🚀" })} className="px-8">Suscribirse</Button>
+                <Button className="px-8">Suscribirse</Button>
               </div>
             </div>
           </motion.div>
