@@ -111,8 +111,8 @@ const Login = () => {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.4 }} className="text-center">
             <p className="text-muted-foreground text-sm">
               Al iniciar sesión, aceptas nuestros{' '}
-              <button onClick={() => className="text-primary hover:text-primary/80">Términos de Servicio</button>{' '}y{' '}
-              <button onClick={() =>  className="text-primary hover:text-primary/80">Política de Privacidad</button>
+              <button className="text-primary hover:text-primary/80">Términos de Servicio</button>{' '}y{' '}
+              <button  className="text-primary hover:text-primary/80">Política de Privacidad</button>
             </p>
           </motion.div>
         </div>
