@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import ThemeToggle from '@/components/ThemeToggle';
 import { useAdmin } from '@/contexts/AdminContext';
+import logo  from "@/assets/logo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +47,7 @@ const Navbar = () => {
             className="flex items-center"
           >
             <Link to="/" className="flex items-center space-x-2">
-              <img src="" alt="Wismora Logo" className="h-8 w-auto mix-blend-multiply dark:mix-blend-screen dark:invert" />
+              <img src={logo} alt="Wismora Logo" className="h-8 w-auto mix-blend-multiply dark:mix-blend-screen dark:invert" />
               <span className="text-xl font-bold text-foreground">Wismora</span>
             </Link>
           </motion.div>
