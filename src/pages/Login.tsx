@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import { Mail, Lock, Eye, EyeOff, LogIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
+import {usersData} from "../data/usersData.ts";
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -22,7 +23,8 @@ const Login = () => {
     setIsLoading(true);
 
     setTimeout(() => {
-      const users = JSON.parse(localStorage.getItem('users') || '[]');
+      const users = usersData;
+      console.log(users);
       const user = users.find(u => u.email === formData.email && u.password === formData.password);
 
       if (user) {
